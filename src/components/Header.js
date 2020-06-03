@@ -6,7 +6,7 @@ import { Button, Navbar, Nav, NavDropdown, Form, InputGroup, FormControl } from 
 function Header() {
   return (
     <Navbar fixed='top' bg='light' expand='lg'>
-      <Navbar.Brand href='#home'><NavLink activeClassName='logo' to='/' exact>E-Commerce</NavLink></Navbar.Brand>
+      <Navbar.Brand href='#home'><NavLink activeClassName='logo-active' className='logo' to='/' exact>E-Commerce</NavLink></Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
