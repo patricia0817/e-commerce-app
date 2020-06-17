@@ -32,15 +32,39 @@ code {
   text-decoration: none;
 }
 
-.home-guest-container {
-  margin-top: 5rem;
+.login-form__submit {
+  flex-direction: column;
+}
+
+.content-container {
+  margin-top: 10rem;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+@media all and (min-width: 768px) {
+  .content-container {
+    margin-top: 5rem;
+    padding-top: 1rem;
+  }
 }
 
 .login-form__input {
   padding-right: 0.5rem;
 }
 
+.sidebar-container {
+  border-right: 1px solid #ced4da;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+  border-top: 1px solid #ced4da;
+  padding-top: 1.2rem;
+}
+
 .footer {
   background: rgba(0,0,0,.7);
-
 }

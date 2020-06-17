@@ -18,7 +18,7 @@ function Header() {
         </Nav>
       </Navbar.Collapse>
       <Form className='login-form' inline>
-        <InputGroup className='login-form__input'>
+        <InputGroup className='login-form__input py-1'>
           <InputGroup.Prepend>
             <InputGroup.Text id='basic-addon1'>@</InputGroup.Text>
           </InputGroup.Prepend>
@@ -28,14 +28,14 @@ function Header() {
             aria-describedby='basic-addon1'
           />
         </InputGroup>
-        <InputGroup className='login-form__input'>
+        <InputGroup className='login-form__input py-1'>
           <FormControl
             placeholder='Password'
             aria-label='Password'
             type='password'
           />
         </InputGroup>
-        <InputGroup className='login-form__submit'>
+        <InputGroup className='login-form__submit py-1'>
           <Button variant='dark'>Login</Button>{ ' ' }
         </InputGroup>
       </Form>

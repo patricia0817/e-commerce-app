@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Form, Button, Jumbotron, Container } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
+
+import HomeJumbotron from './HomeJumbotron'
+import Container from './Container'
 
 function HomeGuest() {
   const [ email, setEmail ] = useState()
@@ -18,17 +21,9 @@ function HomeGuest() {
 
 
   return (
-    <div className='home-guest-container container-fluid pt-3 px-5'>
+    <Container>
       <div className='row d-flex justify-content-around'>
-        <Jumbotron className='col-xs-12 col-lg-5' fluid>
-          <Container>
-            <h1>Zara.</h1>
-            <p>
-              Welcome to our shop.
-              We invite you to register for a full experience.
-        </p>
-          </Container>
-        </Jumbotron>
+        <HomeJumbotron small />
         <Form onSubmit={ e => handleSubmit( e ) } className='col-xs-12 col-lg-5'>
           <Form.Group controlId='formBasicEmail'>
             <Form.Label>Email address</Form.Label>
@@ -51,7 +46,7 @@ function HomeGuest() {
       </Button>
         </Form>
       </div>
-    </div>
+    </Container>
   )
 }
 
