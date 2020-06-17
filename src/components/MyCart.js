@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
+import CartCard from './CartCard'
+import Container from './Container'
 
 function MyCart() {
   return (
-    <>
-      My Cart
-    </>
+    <Container>
+      <CartCard />
+    </Container>
   )
 }
 
